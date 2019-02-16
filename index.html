@@ -25,9 +25,35 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/javascript/psychic.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Psychic Game</title>
   </head>
   <body>
-    <div class="container-fluid"></div>
+    <div class="container-fluid">
+      <div class="bgimg">
+        <div class="jumbotron m-0 text-center bg-dark text-warning ">
+          <h1>Psychic Game</h1>
+        </div>
+        <div row>
+          <div class="column col-12 text-center p-3 text-warning text-bold">
+            <h2>Guess the letter I'm thinking of</h2>
+          </div>
+        </div>
+        <div class="row p-4">
+          <div class="column col-12 text-bold text-light p-4 m-2 text-center">
+            <h4>Wins <span id="winCount"></span></h4>
+            <h4>Losses <span id="lossCount"></span></h4>
+            <h4>Guesses Left <span id="guessCount"></span></h4>
+            <h4>Guesses So Far <span id="guessChars"></span></h4>
+          </div>
+        </div>
+        <div class="row p-4">
+          <div class="column col-12 text-center p-3 text-warning">
+            <h2>Press Space to Start the Game</h2>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
