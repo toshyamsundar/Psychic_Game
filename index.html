@@ -32,27 +32,53 @@
   <body>
     <div class="container-fluid">
       <div class="bgimg">
-        <div class="jumbotron m-0 text-center bg-dark text-warning ">
+        <div class="jumbotron m-0 text-center bg-dark text-warning bg-transparent">
           <h1>Psychic Game</h1>
         </div>
-        <div row>
+        <div class="row m-0">
           <div class="column col-12 text-center p-3 text-warning text-bold">
             <h2>Guess the letter I'm thinking of</h2>
           </div>
         </div>
-        <div class="row p-4">
-          <div class="column col-12 text-bold text-light p-4 m-2 text-center">
-            <h4>Wins <span id="winCount"></span></h4>
-            <h4>Losses <span id="lossCount"></span></h4>
-            <h4>Guesses Left <span id="guessCount"></span></h4>
-            <h4>Guesses So Far <span id="guessChars"></span></h4>
+        <div class="row m-0 py-1">
+          <div class="column col-6 text-bold text-light text-center">
+            <button class="btn bg-warning">Wins</button>
+          </div>
+          <div class="column col-6 text-bold text-light text-center">
+            <button class="btn bg-warning" id="winCount">&nbsp</button>
           </div>
         </div>
-        <div class="row p-4">
+        <div class="row m-0 py-1">
+          <div class="column col-6 text-bold text-light text-center">
+            <button class="btn bg-warning">Losses</button>
+          </div>
+          <div class="column col-6 text-bold text-light text-center">
+            <button class="btn bg-warning" id="lossCount">&nbsp</button>
+          </div>
+        </div>
+        <div class="row m-0 py-1">
+          <div class="column col-6 text-bold text-light text-center">
+            <button class="btn bg-warning">Guesses Left</button>
+          </div>
+          <div class="column col-6 text-bold text-light text-center">
+            <button class="btn bg-warning" id="guessCount">&nbsp</button>
+          </div>
+        </div>
+        <div class="row m-0 py-1">
+          <div class="column col-6 text-bold text-light text-center">
+            <button class="btn bg-warning">Guesses So Far</button>
+          </div>
+          <div class="column col-6 text-bold text-light text-center">
+            <button class="btn bg-warning" id="guessChars">&nbsp</button>
+          </div>
+        </div>
+
+        <div class="row m-0" id="start">
           <div class="column col-12 text-center p-3 text-warning">
-            <h2>Press Space to Start the Game</h2>
+            <h2>Press any key to start the game</h2>
           </div>
         </div>
+        <div class="row buttons m-0"></div>
       </div>
     </div>
   </body>

@@ -6,11 +6,11 @@ $(document).ready(function() {
 
   var alphabets = "abcdefghijklmnopqrstuvwxyz".split("");
   var randomChar = "";
-  var startFlag = false;
+  var startFlag = true;
 
   $(document).keyup(function(e) {
     // Start the when space key press
-    if (e.keyCode === 32) {
+    if (startFlag) {
       winCount = 0;
       lossCount = 0;
       guessCount = 9;
@@ -23,10 +23,10 @@ $(document).ready(function() {
 
       randomChar = alphabets[Math.floor(Math.random() * alphabets.length) + 1];
       console.log("Char: " + randomChar);
-      startFlag = true;
-    }
+      startFlag = false;
 
-    if (startFlag) {
+      $("#start").empty();
+    } else {
       console.log("User Char: " + e.key);
       if (e.key === randomChar) {
         winCount++;
@@ -39,7 +39,7 @@ $(document).ready(function() {
 
         randomChar = alphabets[Math.floor(Math.random() * alphabets.length) + 1];
         console.log("Char: " + randomChar);
-      } else if (e.keyCode !== 32) {
+      } else {
         guessCount--;
         guessChars.push(e.key);
 
@@ -56,8 +56,6 @@ $(document).ready(function() {
         $("#guessCount").text(guessCount);
         $("#guessChars").text(guessChars);
       }
-    } else {
-      alert("Press SPACE key to start");
     }
   });
 });
