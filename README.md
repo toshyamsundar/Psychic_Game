@@ -1,7 +1,5 @@
 # Psychic_Game
 
-# Word_Guess
-
 Letter Guess Game
 
 ├── assets  
